@@ -1,0 +1,41 @@
+.resume {
+    border: 2px solid rgb(248, 142, 239);
+    padding: 2rem;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    border-radius: 20px;
+}
+
+.resume:hover{
+    box-shadow: -6px -11px 20px rgba(248, 142, 239, 0.5);
+    scale: 1.003;
+    transition: all 0.6s linear;
+}
+  
+.resume .img img {
+    width: 40%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.icons a i {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.icons i:hover {
+    color: rgb(248, 142, 239);
+}
+
+@media (max-width:768px) {
+    .resume {
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media (max-width:480px) {
+    .resume {
+        width: 80%;
+    }
+}

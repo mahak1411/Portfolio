@@ -1,0 +1,6 @@
+body {
+  font-family: "Noto Serif", serif;
+  background: url('./images/bg.avif') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}

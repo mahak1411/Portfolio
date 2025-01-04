@@ -1,0 +1,107 @@
+.hero{
+    min-height: 100vh
+}
+
+.left{
+    padding: 4rem !important;
+    line-height: 2rem;
+}
+.h1-heading{
+    font-size: 3rem;
+    font-weight: bold;
+   
+}
+
+.h4-heading{
+    color: rgb(248, 142, 239);
+    text-shadow: 0 0 15px rgb(248, 142, 239);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem ;
+    font-weight: bold;
+}
+
+.para{
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+}
+
+.right{
+    text-align: center;
+}
+
+.hero img{
+    height: 70%;
+    width: 70%;
+    box-shadow:1px 2px 30px rgb(253, 152, 208);
+    border-radius: 50%;
+}
+.about-heading{
+    margin: 2.6rem 0;
+    font-size: 3rem;
+    text-decoration: underline;
+    /* color: rgb(248, 142, 239); */
+}
+
+.left .content p{
+    list-style: none;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    letter-spacing: 0.3rem;
+
+}
+
+.left .content p span , .content p span a{
+    color: rgb(248, 142, 239);
+    text-decoration: none;
+}
+
+.home-icon{
+    text-shadow: 0 0 15px rgb(248, 142, 239) ;
+}
+
+.home-icon i{
+    margin: 1.5rem 0 !important;
+    font-size: 1.6rem !important;
+}
+
+.home-icon i:hover{
+    transition: all 0.5s linear;
+    scale: 1.1;
+}
+
+
+@media(max-width:500px){
+    .left{
+        line-height: 1.6rem;
+        padding: 2rem !important;
+    }
+
+    .para{
+        font-size: 1rem;
+    }
+
+    .h1-heading{
+        font-size: 2.4rem;
+    }
+
+    .h4-heading{
+        font-size: 1.7rem;
+    }
+
+    .hero img{
+        width: 90%;
+        height: 90%;
+    }
+    .left .content p{
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+
+    .content p span a{
+        font-size: 0.7rem;
+    }
+    .home-icon i{
+        margin: 1.5rem 1rem !important;
+        font-size: 1.6rem !important;
+    }
+}
