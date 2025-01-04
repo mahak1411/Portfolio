@@ -31,7 +31,7 @@ const Contact = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:3000/connect", { // Ensure the correct backend URL here
+      const response = await fetch("https://portfolio-8wrl.onrender.com/connect", { // Ensure the correct backend URL here
         method: "POST",
         headers: {
           "Content-Type": "application/json",
