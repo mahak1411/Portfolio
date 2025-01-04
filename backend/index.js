@@ -5,8 +5,10 @@ const app = express();
 const PORT = process.env.PORT;
 const Contact = require('./model/connect');
 const cors = require('cors');
+const path = require('path')
 app.use(cors());
 
+const _dirname = path.resolve()
 
 // Middleware to parse JSON request bodies
 app.use(express.json());
@@ -44,10 +46,11 @@ app.post('/connect', async (req, res) => {
     }
 });
 
-// Simple home route
-app.get('/', (req, res) => {
-    res.send("Working");
-});
+
+app.use(express.static(path.join(_dirname,"/frontend/dist")));
+app.get('*',(req,res)=>{
+  res.sendFile(path.resolve(_dirname,"frontend" , "dist" , "index.html"));
+})
 
 // Start the server
 app.listen(PORT, () => {
